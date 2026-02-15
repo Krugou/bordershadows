@@ -93,6 +93,7 @@ function App() {
           description={t('effects.neumorphism.desc')}
           className="bg-slate-100 dark:bg-gray-900 border-none shadow-[12px_12px_24px_#d1d5db,-12px_-12px_24px_#ffffff] dark:shadow-[12px_12px_24px_#040404,-12px_-12px_24px_#141414]"
           effectClass="hover:bg-slate-50 dark:hover:bg-gray-800 transition-colors"
+          codeSnippet='className="bg-slate-100 dark:bg-gray-900 shadow-[12px_12px_24px_#d1d5db,-12px_-12px_24px_#ffffff] dark:shadow-[12px_12px_24px_#040404,-12px_-12px_24px_#141414]"'
         >
           <div className="relative group/icon">
             <div className="w-20 h-20 rounded-2xl bg-slate-100 dark:bg-gray-900 shadow-[6px_6px_12px_#d1d5db,-6px_-6px_12px_#ffffff] dark:shadow-[6px_6px_12px_#040404,-6px_-6px_12px_#141414] flex items-center justify-center group-hover/icon:scale-110 transition-transform duration-500">
@@ -107,6 +108,7 @@ function App() {
           description={t('effects.glassmorphism.desc')}
           effectClass="bg-white/10 dark:bg-white/5 backdrop-blur-xl border border-white/20 dark:border-white/10 group-hover:border-white/40 dark:group-hover:border-white/20 transition-all duration-700"
           className="shadow-2xl shadow-slate-200/50 dark:shadow-none"
+          codeSnippet='effectClass="bg-white/10 backdrop-blur-xl border border-white/20 dark:border-white/10 group-hover:border-white/40"'
         >
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-tr from-indigo-500 to-pink-500 rounded-full opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-1000" />
@@ -121,6 +123,7 @@ function App() {
           title={t('effects.neon.title')}
           description={t('effects.neon.desc')}
           effectClass="bg-cyan-500/5 border border-cyan-500/20 group-hover:border-cyan-400 group-hover:shadow-[0_0_40px_rgba(6,182,212,0.4)] transition-all duration-500"
+          codeSnippet='effectClass="border border-cyan-500/20 group-hover:border-cyan-400 group-hover:shadow-[0_0_40px_rgba(6,182,212,0.4)] transition-all"'
         >
            <div className="relative overflow-hidden group/btn px-10 py-4 bg-gray-950 rounded-xl border-2 border-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_40px_rgba(6,182,212,0.6)] transition-all active:scale-95">
              <div className="absolute inset-0 bg-cyan-500 opacity-0 group-hover/btn:opacity-10 transition-opacity" />
@@ -133,6 +136,7 @@ function App() {
           title={t('effects.gradient.title')}
           description={t('effects.gradient.desc')}
           effectClass="bg-gradient-to-r from-pink-500 via-purple-500 via-indigo-500 to-cyan-500 opacity-40 group-hover:opacity-100 transition-opacity duration-1000 animate-gradient-x"
+          codeSnippet='effectClass="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-40 group-hover:opacity-100 transition-opacity animate-gradient-x"'
         >
              <div className="flex flex-col items-center gap-2">
                <Diamond className="w-12 h-12 text-pink-500 drop-shadow-[0_0_15px_rgba(236,72,153,0.5)] animate-bounce" />
@@ -145,6 +149,7 @@ function App() {
           title={t('effects.depth.title')}
           description={t('effects.depth.desc')}
           effectClass="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.05),0_12px_24px_rgba(0,0,0,0.05)]"
+          codeSnippet='className="shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.05),0_12px_24px_rgba(0,0,0,0.05)]"'
         >
            <div className="relative">
              <div className="absolute -inset-1 bg-slate-200 dark:bg-gray-700 rounded-2xl -translate-y-2 translate-x-1" />
@@ -160,6 +165,7 @@ function App() {
           title={t('effects.inset.title')}
           description={t('effects.inset.desc')}
           effectClass="bg-slate-50 dark:bg-gray-900 shadow-[inset_0_4px_20px_rgba(0,0,0,0.15)] dark:shadow-[inset_0_4px_24px_rgba(0,0,0,0.7)] border border-slate-200 dark:border-gray-800"
+          codeSnippet='className="bg-slate-50 dark:bg-gray-900 shadow-[inset_0_4px_20px_rgba(0,0,0,0.15)] dark:shadow-[inset_0_4px_24px_rgba(0,0,0,0.7)]"'
         >
             <div className="w-full max-w-[200px] h-6 bg-slate-200 dark:bg-gray-950 rounded-full shadow-[inset_0_2px_8px_rgba(0,0,0,0.25)] p-1.5 overflow-hidden">
                 <div className="h-full w-2/3 bg-gradient-to-r from-indigo-600 to-purple-500 rounded-full shadow-[0_0_20px_rgba(99,102,241,0.8)] relative">
@@ -173,6 +179,7 @@ function App() {
           title={t('effects.ring.title')}
           description={t('effects.ring.desc')}
           effectClass="bg-white dark:bg-gray-950 border border-slate-200 dark:border-gray-800 group-hover:ring-[12px] group-hover:ring-purple-500/10 group-hover:border-purple-500 transition-all duration-700 shadow-inner"
+          codeSnippet='effectClass="group-hover:ring-[12px] group-hover:ring-purple-500/10 group-hover:border-purple-500 transition-all"'
         >
             <div className="relative flex items-center justify-center">
               <div className="absolute w-20 h-20 rounded-full border-2 border-dashed border-purple-400/30 animate-spin" style={{ animationDuration: '8s' }} />
@@ -189,6 +196,8 @@ function App() {
           description={t('effects.spotlight.desc')}
           showSpotlight={true}
           effectClass="bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 transition-shadow duration-500 group-hover:shadow-[0_0_50px_rgba(99,102,241,0.1)]"
+          codeSnippet='showSpotlight={true}
+effectClass="group-hover:shadow-[0_0_50px_rgba(99,102,241,0.1)]"'
         >
            <div className="text-center group-hover:scale-125 transition-transform duration-700">
              <div className="relative">
@@ -204,6 +213,7 @@ function App() {
           title={t('effects.skew.title')}
           description={t('effects.skew.desc')}
           effectClass="bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 overflow-hidden"
+          codeSnippet='effectClass="bg-white dark:bg-gray-900 border border-slate-200 overflow-hidden"'
         >
             <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 opacity-20 -skew-x-[30deg] translate-x-[-150%] group-hover:translate-x-[-20%] transition-transform duration-1000 ease-[cubic-bezier(0.23,1,0.32,1)]" />
             <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 opacity-10 -skew-x-[30deg] translate-x-[-180%] group-hover:translate-x-[-40%] transition-transform duration-700 delay-100 ease-[cubic-bezier(0.23,1,0.32,1)]" />
@@ -215,6 +225,7 @@ function App() {
           title={t('effects.float.title')}
           description={t('effects.float.desc')}
           effectClass="bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 hover:shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] transition-all duration-1000"
+          codeSnippet='className="hover:shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] transition-all duration-1000"'
         >
            <div className="group-hover:animate-float">
              <Box className="w-20 h-20 text-indigo-600 dark:text-white drop-shadow-[0_15px_15px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_20px_20px_rgba(0,0,0,0.5)] transition-all duration-1000 group-hover:rotate-[15deg]" />
@@ -226,6 +237,7 @@ function App() {
           title={t('effects.reflection.title')}
           description={t('effects.reflection.desc')}
           effectClass="bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800"
+          codeSnippet='className="bg-white dark:bg-gray-900 border border-slate-200"'
         >
             <div className="relative text-center group-hover:-translate-y-4 transition-transform duration-700">
                 <span className="text-6xl font-black italic tracking-tighter text-slate-900 dark:text-gray-100">EDGE</span>
@@ -238,6 +250,7 @@ function App() {
             title={t('effects.liquid.title')}
             description={t('effects.liquid.desc')}
             effectClass="bg-gradient-to-tr from-pink-500 via-rose-500 to-orange-400 opacity-60 group-hover:opacity-100 border-none transition-opacity duration-1000"
+            codeSnippet='effectClass="bg-gradient-to-tr from-pink-500 via-rose-500 to-orange-400 animate-liquid border-none"'
          >
              <div className="p-8 bg-white/20 dark:bg-black/20 backdrop-blur-md animate-liquid border border-white/30 shadow-2xl">
                 <Waves className="w-10 h-10 text-white animate-pulse" />
@@ -249,6 +262,7 @@ function App() {
             title="Magnetic Pulse"
             description="Dynamic border alignment with a high-intensity pulse feedback on interaction."
             effectClass="bg-white dark:bg-gray-950 border-2 border-slate-100 dark:border-gray-800 hover:border-indigo-600 dark:hover:border-indigo-500 transition-colors duration-300"
+            codeSnippet='effectClass="border-2 border-slate-100 dark:border-gray-800 hover:border-indigo-600 transition-colors"'
          >
              <div className="relative group/magnetic">
                 <div className="absolute -inset-4 bg-indigo-500 rounded-full blur-xl opacity-0 group-hover/magnetic:opacity-40 animate-pulse transition-opacity duration-500" />
@@ -263,6 +277,7 @@ function App() {
             title="Spectral Aura"
             description="A faint, multi-layered pulsing border that ripples outward mysteriously."
             effectClass="bg-white dark:bg-gray-950 border border-slate-200 dark:border-gray-800 hover:ring-[30px] hover:ring-indigo-500/5 transition-all duration-[2000ms] shadow-inner"
+            codeSnippet='effectClass="hover:ring-[30px] hover:ring-indigo-500/5 transition-all duration-[2000ms]"'
          >
              <div className="relative">
                 <div className="absolute inset-0 bg-indigo-500/10 rounded-full blur-2xl animate-pulse scale-150" />
@@ -276,6 +291,7 @@ function App() {
             description="A magical, rotating glow effect using hardware-accelerated filters."
             className="group"
             effectClass="bg-white dark:bg-gray-900 border border-slate-100 dark:border-gray-800"
+            codeSnippet='effectClass="bg-white dark:bg-gray-900 border border-slate-100 transition-all duration-700"'
          >
              <div className="relative">
                 <div className="absolute -inset-10 bg-gradient-to-tr from-amber-500/30 to-rose-500/30 blur-3xl rounded-full animate-spin" style={{ animationDuration: '6s' }} />
