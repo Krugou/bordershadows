@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --variant-dark: selector(.dark);
+}
+
 :root {
   color-scheme: light;
 }
